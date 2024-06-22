@@ -5,7 +5,7 @@ public:
             for(int j=0;j<2;j++){
                 if(grid[i][j]=='B' && grid[i][j+1]=='B'&& grid[i+1][j]=='B' && grid[i+1][j+1]=='B' )
                     return true;
-                if(grid[i][j]=='W' && grid[i][j+1]=='W'&& grid[i+1][j]=='W' && grid[i+1][j+1]=='W' )
+                else if(grid[i][j]=='W' && grid[i][j+1]=='W'&& grid[i+1][j]=='W' && grid[i+1][j+1]=='W' )
                     return true;
             }
         }
@@ -13,20 +13,20 @@ public:
             for(int j=0;j<2;j++){
                 if(grid[i][j]=='W' && grid[i][j+1]=='B'&& grid[i+1][j]=='B' && grid[i+1][j+1]=='B' )
                     return true;
-                if(grid[i][j]=='W' && grid[i][j+1]=='W'&& grid[i+1][j]=='W' && grid[i+1][j+1]=='B' )
+                else if(grid[i][j]=='W' && grid[i][j+1]=='W'&& grid[i+1][j]=='W' && grid[i+1][j+1]=='B' )
                     return true;
-                if(grid[i][j]=='W' && grid[i][j+1]=='W'&& grid[i+1][j]=='B' && grid[i+1][j+1]=='W' )
+                else if(grid[i][j]=='W' && grid[i][j+1]=='W'&& grid[i+1][j]=='B' && grid[i+1][j+1]=='W' )
                     return true;
-                if(grid[i][j]=='W' && grid[i][j+1]=='B'&& grid[i+1][j]=='W' && grid[i+1][j+1]=='W' )
+                else if(grid[i][j]=='W' && grid[i][j+1]=='B'&& grid[i+1][j]=='W' && grid[i+1][j+1]=='W' )
                     return true;
                 
-                if(grid[i][j]=='B' && grid[i][j+1]=='W'&& grid[i+1][j]=='W' && grid[i+1][j+1]=='W' )
+                else if(grid[i][j]=='B' && grid[i][j+1]=='W'&& grid[i+1][j]=='W' && grid[i+1][j+1]=='W' )
                     return true;
-                if(grid[i][j]=='B' && grid[i][j+1]=='B'&& grid[i+1][j]=='B' && grid[i+1][j+1]=='W' )
+                else if(grid[i][j]=='B' && grid[i][j+1]=='B'&& grid[i+1][j]=='B' && grid[i+1][j+1]=='W' )
                     return true;
-                if(grid[i][j]=='B' && grid[i][j+1]=='B'&& grid[i+1][j]=='W' && grid[i+1][j+1]=='B' )
+                else if(grid[i][j]=='B' && grid[i][j+1]=='B'&& grid[i+1][j]=='W' && grid[i+1][j+1]=='B' )
                     return true;
-                if(grid[i][j]=='B' && grid[i][j+1]=='W'&& grid[i+1][j]=='B' && grid[i+1][j+1]=='B' )
+                else if(grid[i][j]=='B' && grid[i][j+1]=='W'&& grid[i+1][j]=='B' && grid[i+1][j+1]=='B' )
                     return true;
                 
             }
